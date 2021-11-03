@@ -8,7 +8,7 @@ sudo docker build  -t  happysea/mongoshake:2.6.5
 
 
 启动：
-sudo docker run -itd --rm   --name=mongoshake --restart unless-stopped  
+sudo docker run -itd --rm   --name=mongoshake --restart unless-stopped  \
 -e tunnel_address=seamgtest@192.168.18.51:9092  \
 -e log_dir=./logs/  \
 -e sync_mode=incr  \
