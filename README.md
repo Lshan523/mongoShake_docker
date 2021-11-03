@@ -3,7 +3,7 @@ mongoShake 2.6.5
 
 
 
-sudo docker build  -t  happysea/mongoshake:2.6.5
+sudo docker build  -t  happysea/mongoshake:2.6.5 .
 
 
 
