@@ -39,7 +39,7 @@ incr_sync.http_port = 9100
 system_profile_port = 9200
 
 # global log level: debug, info, warning, error. lower level message will be filter
-log.level = info
+log.level = '${log_level:=info}'
 # log directory. log and pid file will be stored into this file.
 # if not set, default is  ./logs/s
 # log和pid文件的目录，如果不设置默认打到当前路径的logs目录。
