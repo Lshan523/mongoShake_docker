@@ -325,6 +325,7 @@ special.source.db.flag = '${special_source_db_flag}' ' > /mongo-shake-v2.6.5/col
 
 
 #####  start service  #######   0 - file，1 - file+stdout，2 - stdout
+rm -rf mongoshake.pid
 ./collector.linux -conf=./collector.conf -verbose 1
 
 
