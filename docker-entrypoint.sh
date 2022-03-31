@@ -191,7 +191,7 @@ checkpoint.storage.url.mongo_ssl_root_ca_file = '${checkpoint_storage_url_mongo_
 # 若checkpoint不存在，且该值为1970-01-01T00:00:00Z，则会拉取源端现有的所有oplog。
 # 若checkpoint不存在，且该值不为1970-01-01T00:00:00Z，则会先检查源端oplog最老的时间是否
 # 大于给定的时间，如果是则会直接报错退出。
-checkpoint.start_position = 1970-01-01T00:00:00Z
+checkpoint.start_position ='${checkpoint_start_position:=1970-01-01T00:00:00Z}'
 
 # transform from source db or collection namespace to dest db or collection namespace.
 # at most one of these two parameters can be given.
